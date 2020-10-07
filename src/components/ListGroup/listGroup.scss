@@ -1,0 +1,40 @@
+.list-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  &--card {
+    background: #fff;
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+    border-radius: 8px;
+
+    &__title {
+      margin: 0;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: 500;
+      background: #033B00;
+      color: #fff;
+      border-radius: 8px 8px 0 0;
+    }
+
+    &__list {
+      height: 200px;
+      overflow-y: auto;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        display: block;
+        padding: 15px 10px;
+        border-bottom: 1px solid rgba(#033B00, 0.3);
+        font-size: 14px;
+      }
+    }
+  }
+}
